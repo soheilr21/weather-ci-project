@@ -1,0 +1,15 @@
+stages:
+  - build
+  - deploy
+
+build_image:
+  stage: build
+  script:
+    - docker build -t weather-app .
+
+deploy_local:
+  stage: deploy
+  script:
+    - docker stop weather || true
+    - docker rm weather || true
+    - docker run -d -p 8080:80 --name weather weather-app
