@@ -5,7 +5,7 @@ stages:
 build_image:
   stage: build
   script:
-    - docker build -t weather-app .
+    - docker build --pull=never -t weather-app .
 
 deploy_local:
   stage: deploy
