@@ -1,7 +1,7 @@
 
 const $ = document
 
-let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
+let months = ["January", "February", "March", "April", "May", "June", "July", "mordad", "September", "October", "November", "December"]; 
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const date = new Date()
 let inputValue = $.querySelector('input')
